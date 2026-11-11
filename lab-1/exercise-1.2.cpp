@@ -21,6 +21,6 @@ int main()
         factorial(10);
     }
     clock_t end = clock();
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+    double seconds = 
     std::cout << seconds << " s" << std::endl;
 }
