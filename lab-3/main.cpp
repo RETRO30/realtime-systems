@@ -32,7 +32,7 @@ void coin_sharing(int &coins, std::mutex &coins_mutex, std::string name, int &th
         {
             coins -= 1;
             thief_coins += 1;
-            std::cout << std::format("{} | {} keep coins: {}\n", get_time_now(), name, 1);
+            std::cout << std::format("{} | {} | thief coins: {}, companion coins: {}, coins: {}\n", get_time_now(), name, thief_coins, companion_coins, coins);
         }
         if (coins == 0 || (coins == 1 && thief_coins == companion_coins))
         {
